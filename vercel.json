@@ -1,0 +1,38 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/style.css",
+      "destination": "/assets/css/style.css"
+    },
+    {
+      "source": "/script.js",
+      "destination": "/assets/js/script.js"
+    },
+    {
+      "source": "/profile.jpg",
+      "destination": "/assets/images/profile.jpg"
+    },
+    {
+      "source": "/Grad-pic.jpg",
+      "destination": "/assets/images/Grad-pic.jpg"
+    },
+    {
+      "source": "/ecosense.png",
+      "destination": "/assets/images/ecosense.png"
+    },
+    {
+      "source": "/cropreco.png",
+      "destination": "/assets/images/cropreco.png"
+    },
+    {
+      "source": "/calle.png",
+      "destination": "/assets/images/calle.png"
+    },
+    {
+      "source": "/Resume.pdf",
+      "destination": "/assets/documents/Resume.pdf"
+    }
+  ]
+}
