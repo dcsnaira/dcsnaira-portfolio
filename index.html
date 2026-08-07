@@ -219,6 +219,7 @@
         <li>Gawad Teknokomersyo: Publication and Presentation in the ATIFTAP Global Business Conference</li>
       </ul>
     </div>
+
     <div class="timeline-item">
       <div class="dot"></div>
       <span class="period">2019 – 2020</span>
@@ -228,7 +229,6 @@
         <li> Urdaneta City, Pangasinan </li>
         <li> TVL-ICT — First Honor </li>
       </ul>
-
     </div>
   </div>
 </section>
@@ -250,11 +250,14 @@
       </ul>
       <p class="note"> <b>Tech Stack:</b> Microsoft Teams, Microsoft Excel, Wordpress, and Canva</p>
       <br>
-      <div class="dot"></div>
-      <span class="period">May 2025 - August 2025</span>
-      <h3>LCR Merchandise |<span class="scr"> Part Time </span></h3>
-      <p class="note">Delivered document processing services including printing, editing, data encoding, and template creation using office and layout tools to support customer requests.</p>
-      <p class="note"><b>Tech Stack:</b> Microsoft Word, Microsoft Excel, Adobe Photoshop, Canva</p>
+      <div class="timeline-item">
+        <div class="dot"></div>
+        <span class="period">May 2025 - August 2025</span>
+        <h3>LCR Merchandise |<span class="scr"> Part Time </span></h3>
+        <p class="note">Delivered document processing services including printing, editing, data encoding, and template creation using office and layout tools to support customer requests.</p>
+        <p class="note"><b>Tech Stack:</b> Microsoft Word, Microsoft Excel, Adobe Photoshop, Canva</p>
+      </div>
+      
     </div>
   </div>
 </section>
@@ -263,50 +266,56 @@
   <div class="certificates-inner">
     <h2 class="section-title">ACHIEVEMENTS</h2>
     <div class="cert-grid">
-      <div class="cert-card" style="transform:rotate(-2deg)">
-        <span class="scr">★ certified</span>
-        <h3>Web Development Fundamentals</h3>
-        <p>Online Course Platform · 2025</p>
+        <div class="cert-card" style="transform:rotate(2deg)">
+        <span class="scr">★ Competition</span>
+        <h3>Philippines Space Agency (PhilSa)</h3>
+        <p> Participated in Space Business Innovation Challenge (SBIC) · 2025</p>
       </div>
-      <div class="cert-card" style="transform:rotate(2deg)">
-        <span class="scr">★ certified</span>
-        <h3>Networking Essentials</h3>
-        <p>Cisco Networking Academy · 2024</p>
+      <div class="cert-card" style="transform:rotate(-2deg)">
+        <span class="scr">★ Published Research Paper</span>
+        <h3>Crop Suitability Recommendation Based on Soil Parameters and Environmental Factors with Gradient Boosting Trees and Random Forest Algorithm</h3>
+        <p>Journal of Global Business Online, Volume 14, Issue 3 (ISSN 2350-7179) · 2025</p>
       </div>
       <div class="cert-card" style="transform:rotate(-1.5deg)">
-        <span class="scr">★ certified</span>
-        <h3>Google IT Support</h3>
-        <p>Coursera · 2025</p>
-      </div>
-      <div class="cert-card" style="transform:rotate(2.5deg)">
-        <span class="scr">★ certified</span>
-        <h3>Capstone Excellence Award</h3>
-        <p>University · 2026</p>
+        <span class="scr">★ Competition</span>
+        <h3>Trend University Capture the Flag (uCTF)</h3>
+        <p> Place 67th out of 187 teams in uCTF  · 2025</p>
       </div>
     </div>
   </div>
 </section>
 
 <section class="contact reveal" id="contact">
-  <h2 class="section-title">let's be <span class="scr">pen pals</span></h2>
-  <p class="sub">open to junior dev roles, internships-to-hire, and good coffee chats</p>
+  <h2 class="section-title">let's <span class="scr">connect</span></h2>
+  <p class="sub">Available for junior developer roles, freelance work, and creative collaborations.</p>
   <div class="social-row">
-    <a class="social-badge" href="mailto:aira@example.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
+    <a class="social-badge" href="mailto:a.dacasinreyes@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
     <a class="social-badge" href="https://www.linkedin.com/in/dcsnaira"  title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
     <a class="social-badge" href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
     <a class="social-badge" href="https://github.com/dcsnaira" title="GitHub"><i class="fa-brands fa-github"></i></a>
   </div>
 
-  <form class="contact-form" id="contact-form">
+  <form class="contact-form" id="contact-form" action="https://formspree.io/f/mppawbwo" method="POST">
+    <input type="hidden" name="subject" value="New portfolio contact message">
     <div class="form-row">
-      <input type="text" placeholder="your name" required>
-      <input type="email" placeholder="your email" required>
+      <div class="form-field">
+        <label for="contact-name">Your name</label>
+        <input id="contact-name" name="name" type="text" placeholder="your name" autocomplete="name" required>
+      </div>
+      <div class="form-field">
+        <label for="contact-email">Your email</label>
+        <input id="contact-email" name="email" type="email" placeholder="your email" autocomplete="email" required>
+      </div>
     </div>
-    <textarea placeholder="say hi..." rows="4" required></textarea>
+    <div class="form-field">
+      <label for="contact-message">Message</label>
+      <textarea id="contact-message" name="message" placeholder="message" rows="4" required></textarea>
+    </div>
     <button type="submit" class="send-btn">send it →</button>
+    <p class="form-status" id="form-status" role="alert" aria-live="polite"></p>
   </form>
 
-  <div class="thanks-card" id="thanks-card" style="display:none">
+  <div class="thanks-card" id="thanks-card" role="status" tabindex="-1" style="display:none">
     <span class="scr">thanks for reaching out!</span>
     <p>I'll write back as soon as I can.</p>
   </div>
